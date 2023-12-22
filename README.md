@@ -49,7 +49,7 @@ Example command to run the pipeline: `Example_task.sh`.
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.hc.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.vcf  
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf      # This file is our interested result of somatic mutation in the tumour.
+│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf      # This file is our interested result of somatic mutation in the tumour.  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf  
 │   └── normal-chr2_tumour-chr2_varscan.snp.vcf  
 
