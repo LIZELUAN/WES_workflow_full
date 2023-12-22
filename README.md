@@ -19,37 +19,37 @@ Example command to run the pipeline: `Example_task.sh`.
 
 ## Output Created
 .
-├── normal-chr2.log
-├── tumour-chr2.log
-├── final.log
-├── 02align
-│   ├── normal-chr2.bam
-│   ├── normal-chr2_mdup.bam
-│   ├── normal-chr2_mdup.bam.bai
-│   ├── normal-chr2_metrics.txt
-│   ├── tumour-chr2.bam
-│   ├── tumour-chr2_mdup.bam
-│   ├── tumour-chr2_mdup.bam.bai
-│   └── tumour-chr2_metrics.txt
-├── 03realign
-│   ├── normal-chr2_mdup_recal.bai
-│   ├── normal-chr2_mdup_recal.bam
-│   ├── normal-chr2_tumour-chr2.mpileup
-│   ├── tumour-chr2_mdup_recal.bai
-│   └── tumour-chr2_mdup_recal.bam
-├── 04mutation
-│   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.indel.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf
-│   └── normal-chr2_tumour-chr2_varscan.snp.vcf
+├── normal-chr2.log  
+├── tumour-chr2.log  
+├── final.log  
+├── 02align  
+│   ├── normal-chr2.bam  
+│   ├── normal-chr2_mdup.bam  
+│   ├── normal-chr2_mdup.bam.bai  
+│   ├── normal-chr2_metrics.txt  
+│   ├── tumour-chr2.bam  
+│   ├── tumour-chr2_mdup.bam  
+│   ├── tumour-chr2_mdup.bam.bai  
+│   └── tumour-chr2_metrics.txt  
+├── 03realign  
+│   ├── normal-chr2_mdup_recal.bai  
+│   ├── normal-chr2_mdup_recal.bam  
+│   ├── normal-chr2_tumour-chr2.mpileup  
+│   ├── tumour-chr2_mdup_recal.bai  
+│   └── tumour-chr2_mdup_recal.bam  
+├── 04mutation  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf      # This file is our interested result of somatic mutation in the tumour.
+│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf  
+│   └── normal-chr2_tumour-chr2_varscan.snp.vcf  
 
