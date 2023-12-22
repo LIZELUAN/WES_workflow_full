@@ -1,6 +1,6 @@
 # WES_workflow_full
 A whole-exome sequencing (WES) pipeline to align the read pairs of tumour and normal samples to GRCh38 and identify somatic mutations in the tumour.  
-A full version of WES pipeline with __GATK__ (v4).  
+It is a full version of WES pipeline with __GATK__ (v4).  
 
 ## The main tools used
 __*bwa*__:   Align reads to the ref to generate a BAM file and add a header to the BAM file.  
