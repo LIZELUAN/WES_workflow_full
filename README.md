@@ -22,11 +22,10 @@ The pipeline will generate
   - __Log files__: normal-chr2.log, tumour-chr2.log, and final.log.  
   - __Result files__ in three directories: 02align, 03realign, 04mutation  
 <br>
-<br>
-Below is a example output using the fq files here:  
-.  
-├── normal-chr2.log  
-├── tumour-chr2.log  
+Below is a example output using the fq files here:    
+.                   
+├── normal-chr2.log                  
+├── tumour-chr2.log            
 ├── final.log  
 ├── __02align__  
 │   ├── normal-chr2.bam  
