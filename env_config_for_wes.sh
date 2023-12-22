@@ -21,9 +21,8 @@ conda activate wes
 
 
 # Step 2. Download picard.jar and VarScan.jar
-mkdir -p $local_path/software
-cd $local_path/software
+mkdir -p ~/software
+cd ~/software
 wget https://github.com/broadinstitute/picard/releases/download/2.25.5/picard.jar
 wget --no-check-certificate https://nchc.dl.sourceforge.net/project/varscan/VarScan.v2.3.9.jar
 mv VarScan.v2.3.9.jar VarScan.jar
-cd $local_path
