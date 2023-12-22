@@ -48,7 +48,7 @@ Below is a example output using the fq files here:
 │   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.hc.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.vcf  
-│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.hc.vcf  
+│   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.hc.vcf    
 │   ├── normal-chr2_tumour-chr2_varscan.indel.Somatic.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.hc.vcf  
