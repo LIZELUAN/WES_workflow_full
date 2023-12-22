@@ -3,7 +3,7 @@ A whole-exome sequencing (WES) pipeline to align the read pairs of tumour and no
 A full and completed version with __GATK__.  
 
 ## The main tools used
-__*bwa*__:   Align reads to the ref into the BAM file and add a header to the BAM file.  
+__*bwa*__:   Align reads to the ref to generate the BAM file and add a header to the BAM file.  
 __*Samtools*__:   Sort the BAM file. Later index the bam file after marking the duplicates by picard.  
 __*Picard*__:   Mark duplicates of the BAM file.  
 __*GATK*__:   Conduct base recalibration of the BAM file.  
