@@ -6,7 +6,7 @@ A full and completed version with __GATK__.
 __*bwa*__:   Align reads to the ref into the BAM file and add a header to the BAM file.  
 __*Samtools*__:   Sort the BAM file. Later index the bam file after marking the duplicates by picard.  
 __*Picard*__:   Mark duplicates of the BAM file.  
-__*GATK*__:   Conduct Base recalibration of the BAM file.  
+__*GATK*__:   Conduct base recalibration of the BAM file.  
 __*VarScan*__:   Find the somatic mutations from BAM files of tumour sample and normal sample.  
 
 ## How to run
