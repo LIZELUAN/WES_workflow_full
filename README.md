@@ -55,7 +55,7 @@ Below is a example output using the fq files here:
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.hc.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.vcf  
-│   ├── __normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf__       &nbsp # This file is our interested result of somatic mutation in the tumour.  
+│   ├── __normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf__       &nbsp; # This file is our interested result of somatic mutation in the tumour.  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf  
 │   └── normal-chr2_tumour-chr2_varscan.snp.vcf  
 
