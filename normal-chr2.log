@@ -1,0 +1,128 @@
+[M::bwa_idx_load_from_disk] read 3171 ALT contigs
+[M::process] read 21524 sequences (1908919 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 10634, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (149, 179, 212)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (23, 338)
+[M::mem_pestat] mean and std.dev: (182.32, 44.92)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 401)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 21524 reads in 1.460 CPU sec, 0.247 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -m 4G -t 6 -R @RG\tID:normal-chr2\tSM:normal-chr2\tLB:WES\tPL:Illumina /home/lizeluan/wes/ref/Homo_sapiens_assembly38.fasta /home/lizeluan/wes/fq/normal-chr2_r1.fq.gz /home/lizeluan/wes/fq/normal-chr2_r2.fq.gz
+[main] Real time: 2.726 sec; CPU: 3.930 sec
+[bam_sort_core] merging from 0 files and 6 in-memory blocks...
+09:12:52.689 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/lizeluan/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Dec 22 09:12:52 HKT 2023] MarkDuplicates --INPUT /home/lizeluan/wes/02align/normal-chr2.bam --OUTPUT /home/lizeluan/wes/02align/normal-chr2_mdup.bam --METRICS_FILE /home/lizeluan/wes/02align/normal-chr2_metrics.txt --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Dec 22 09:12:52 HKT 2023] Executing as lizeluan@sge-master on Linux 3.10.0-1160.11.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 21.0.1-internal-adhoc.conda.src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.25.5
+INFO	2023-12-22 09:12:52	MarkDuplicates	Start of doWork freeMemory: 277072224; totalMemory: 285212672; maxMemory: 31675383808
+INFO	2023-12-22 09:12:52	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-12-22 09:12:52	MarkDuplicates	Will retain up to 114765883 data points before spilling to disk.
+INFO	2023-12-22 09:12:53	MarkDuplicates	Read 21534 records. 0 pairs never matched.
+INFO	2023-12-22 09:12:53	MarkDuplicates	After buildSortedReadEndLists freeMemory: 793102792; totalMemory: 1744830464; maxMemory: 31675383808
+INFO	2023-12-22 09:12:53	MarkDuplicates	Will retain up to 989855744 duplicate indices before spilling to disk.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-12-22 09:12:55	MarkDuplicates	After generateDuplicateIndexes freeMemory: 5506215656; totalMemory: 13455327232; maxMemory: 31675383808
+INFO	2023-12-22 09:12:55	MarkDuplicates	Marking 1724 records as duplicates.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Found 7 optical duplicate clusters.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-12-22 09:12:55	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Getting Memory Stats.
+INFO	2023-12-22 09:12:55	MarkDuplicates	Before output close freeMemory: 768307736; totalMemory: 788529152; maxMemory: 31675383808
+INFO	2023-12-22 09:12:55	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-12-22 09:12:55	MarkDuplicates	After output close freeMemory: 221890448; totalMemory: 234881024; maxMemory: 31675383808
+[Fri Dec 22 09:12:55 HKT 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=234881024
+Using GATK jar /home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar BaseRecalibrator -I /home/lizeluan/wes/02align/normal-chr2_mdup.bam -R /home/lizeluan/wes/ref/Homo_sapiens_assembly38.fasta --known-sites /home/lizeluan/wes/ref/1000G_phase1.snps.high_confidence.hg38.vcf.gz --known-sites /home/lizeluan/wes/ref/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz --known-sites /home/lizeluan/wes/ref/Homo_sapiens_assembly38.dbsnp138.vcf -O /home/lizeluan/wes/03realign/normal-chr2_recal.table
+09:12:57.525 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+09:13:02.663 INFO  BaseRecalibrator - ------------------------------------------------------------
+09:13:02.665 INFO  BaseRecalibrator - The Genome Analysis Toolkit (GATK) v4.5.0.0
+09:13:02.665 INFO  BaseRecalibrator - For support and documentation go to https://software.broadinstitute.org/gatk/
+09:13:02.666 INFO  BaseRecalibrator - Executing as lizeluan@sge-master on Linux v3.10.0-1160.11.1.el7.x86_64 amd64
+09:13:02.666 INFO  BaseRecalibrator - Java runtime: OpenJDK 64-Bit Server VM v21.0.1-internal-adhoc.conda.src
+09:13:02.666 INFO  BaseRecalibrator - Start Date/Time: December 22, 2023, 9:12:57 AM HKT
+09:13:02.666 INFO  BaseRecalibrator - ------------------------------------------------------------
+09:13:02.666 INFO  BaseRecalibrator - ------------------------------------------------------------
+09:13:02.667 INFO  BaseRecalibrator - HTSJDK Version: 4.1.0
+09:13:02.667 INFO  BaseRecalibrator - Picard Version: 3.1.1
+09:13:02.667 INFO  BaseRecalibrator - Built for Spark Version: 3.5.0
+09:13:02.667 INFO  BaseRecalibrator - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+09:13:02.668 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+09:13:02.668 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+09:13:02.668 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+09:13:02.668 INFO  BaseRecalibrator - Deflater: IntelDeflater
+09:13:02.668 INFO  BaseRecalibrator - Inflater: IntelInflater
+09:13:02.668 INFO  BaseRecalibrator - GCS max retries/reopens: 20
+09:13:02.668 INFO  BaseRecalibrator - Requester pays: disabled
+09:13:02.669 INFO  BaseRecalibrator - Initializing engine
+09:13:02.958 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/lizeluan/wes/ref/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+09:13:03.076 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/lizeluan/wes/ref/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+09:13:03.186 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/lizeluan/wes/ref/Homo_sapiens_assembly38.dbsnp138.vcf
+09:13:03.379 INFO  BaseRecalibrator - Done initializing engine
+09:13:03.390 INFO  BaseRecalibrationEngine - The covariates being used here: 
+09:13:03.391 INFO  BaseRecalibrationEngine - 	ReadGroupCovariate
+09:13:03.391 INFO  BaseRecalibrationEngine - 	QualityScoreCovariate
+09:13:03.391 INFO  BaseRecalibrationEngine - 	ContextCovariate
+09:13:03.391 INFO  BaseRecalibrationEngine - 	CycleCovariate
+09:13:03.431 INFO  ProgressMeter - Starting traversal
+09:13:03.432 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+09:13:04.146 INFO  BaseRecalibrator - 2 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+1724 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+1726 total reads filtered out of 21534 reads processed
+09:13:04.148 INFO  ProgressMeter -       chr2:189864062              0.0                 19808        1664537.8
+09:13:04.148 INFO  ProgressMeter - Traversal complete. Processed 19808 total reads in 0.0 minutes.
+09:13:04.176 INFO  BaseRecalibrator - Calculating quantized quality scores...
+09:13:04.184 INFO  BaseRecalibrator - Writing recalibration report...
+09:13:04.421 INFO  BaseRecalibrator - ...done!
+09:13:04.423 INFO  BaseRecalibrator - BaseRecalibrator was able to recalibrate 19808 reads
+09:13:04.423 INFO  BaseRecalibrator - Shutting down engine
+[December 22, 2023, 9:13:04 AM HKT] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.12 minutes.
+Runtime.totalMemory()=1191182336
+Tool returned:
+SUCCESS
+Using GATK jar /home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar ApplyBQSR -I /home/lizeluan/wes/02align/normal-chr2_mdup.bam -R /home/lizeluan/wes/ref/Homo_sapiens_assembly38.fasta --bqsr-recal-file /home/lizeluan/wes/03realign/normal-chr2_recal.table -O /home/lizeluan/wes/03realign/normal-chr2_mdup_recal.bam
+09:13:06.071 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/lizeluan/software/gatk-4.5.0.0/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+09:13:11.207 INFO  ApplyBQSR - ------------------------------------------------------------
+09:13:11.210 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.5.0.0
+09:13:11.210 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+09:13:11.210 INFO  ApplyBQSR - Executing as lizeluan@sge-master on Linux v3.10.0-1160.11.1.el7.x86_64 amd64
+09:13:11.210 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v21.0.1-internal-adhoc.conda.src
+09:13:11.211 INFO  ApplyBQSR - Start Date/Time: December 22, 2023, 9:13:06 AM HKT
+09:13:11.211 INFO  ApplyBQSR - ------------------------------------------------------------
+09:13:11.211 INFO  ApplyBQSR - ------------------------------------------------------------
+09:13:11.211 INFO  ApplyBQSR - HTSJDK Version: 4.1.0
+09:13:11.212 INFO  ApplyBQSR - Picard Version: 3.1.1
+09:13:11.212 INFO  ApplyBQSR - Built for Spark Version: 3.5.0
+09:13:11.212 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+09:13:11.212 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+09:13:11.212 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+09:13:11.212 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+09:13:11.212 INFO  ApplyBQSR - Deflater: IntelDeflater
+09:13:11.213 INFO  ApplyBQSR - Inflater: IntelInflater
+09:13:11.213 INFO  ApplyBQSR - GCS max retries/reopens: 20
+09:13:11.213 INFO  ApplyBQSR - Requester pays: disabled
+09:13:11.213 INFO  ApplyBQSR - Initializing engine
+09:13:11.521 INFO  ApplyBQSR - Done initializing engine
+09:13:11.569 INFO  ProgressMeter - Starting traversal
+09:13:11.570 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+09:13:12.039 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+
+09:13:12.040 INFO  ProgressMeter -       chr2:189873517              0.0                 21534        2754882.7
+09:13:12.040 INFO  ProgressMeter - Traversal complete. Processed 21534 total reads in 0.0 minutes.
+09:13:12.263 INFO  ApplyBQSR - Shutting down engine
+[December 22, 2023, 9:13:12 AM HKT] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=1191182336

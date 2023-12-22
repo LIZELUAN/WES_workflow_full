@@ -1,0 +1,42 @@
+-b '/home/lizeluan/wes/fq' -d '/home/lizeluan/wes/ref/Homo_sapiens_assembly38.fasta' -l 'tumour-chr2' -m 'normal-chr2' --
+fastq_gz_dir: /home/lizeluan/wes/fq
+ref_fa: /home/lizeluan/wes/ref/Homo_sapiens_assembly38.fasta
+Bwa alignment, samtools sort, and mark duplicates of tumour and normal samples finished!
+[mpileup] 2 samples in 2 input files
+Min coverage:	8x for Normal, 6x for Tumor
+Min reads2:	2
+Min strands2:	1
+Min var freq:	0.2
+Min freq for hom:	0.75
+Normal purity:	1.0
+Tumor purity:	1.0
+Min avg qual:	15
+P-value thresh:	0.99
+Somatic p-value:	0.05
+Reading input from /home/lizeluan/wes/03realign/normal-chr2_tumour-chr2.mpileup
+Reading mpileup input...
+111300 positions in mpileup file
+23207 had sufficient coverage for comparison
+23176 were called Reference
+0 were mixed SNP-indel calls and filtered
+0 were removed by the strand filter
+28 were called Germline
+0 were called LOH
+3 were called Somatic
+0 were called Unknown
+0 were called Variant
+Reading input from /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.snp.vcf
+Opening output files: /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.snp.Germline.vcf /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.snp.LOH.vcf 
+28 VarScan calls processed
+2 were Somatic (2 high confidence)
+26 were Germline (26 high confidence)
+0 were LOH (0 high confidence)
+Reading input from /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.indel.vcf
+Opening output files: /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.indel.Somatic.vcf /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.indel.Germline.vcf /home/lizeluan/wes/04mutation/normal-chr2_tumour-chr2_varscan.indel.LOH.vcf 
+2 VarScan calls processed
+0 were Somatic (0 high confidence)
+2 were Germline (2 high confidence)
+0 were LOH (0 high confidence)
+Analysis finished!
+Start time: 1703207569
+End time: 1703207609
