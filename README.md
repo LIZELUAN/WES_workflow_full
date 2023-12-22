@@ -23,7 +23,7 @@ The pipeline will generate
   - __Result files__ in three directories: 02align, 03realign, 04mutation  
 
     
-### Below is a example output using the fq files here:    
+## Example output using the example fq files:    
 .                   
 ├── __normal-chr2.log__                  
 ├── __tumour-chr2.log__            
