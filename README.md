@@ -18,7 +18,7 @@ Please see the pipeline at `WES_analysis_pipeline.sh`.
 Example command to run the pipeline: `Example_task.sh`.
 
 ## Output Created
-.
+.  
 ├── normal-chr2.log  
 ├── tumour-chr2.log  
 ├── final.log  
