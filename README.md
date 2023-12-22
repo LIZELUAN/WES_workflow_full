@@ -16,18 +16,19 @@ Please see `env_config_for_wes.sh` and `wes_env.yml`.
 __*2. Simply Run by changing the Example_task.sh file*__  
 Please see the pipeline at `WES_analysis_pipeline.sh`.  
 Example command to run the pipeline: `Example_task.sh`.
-
+<br>
+<br>
 ## Output Created  
 The pipeline will generate  
-- log files: normal-chr2.log, tumour-chr2.log, and final.log.  
-- result files in three directories: 02align, 03realign, 04mutation  
-  
+  - Log files: normal-chr2.log, tumour-chr2.log, and final.log.  
+  - Result files in three directories: 02align, 03realign, 04mutation  
+
 Below is a example output using the fq files here:  
 .  
 ├── normal-chr2.log  
 ├── tumour-chr2.log  
 ├── final.log  
-├── 02align  
+├── __02align__  
 │   ├── normal-chr2.bam  
 │   ├── normal-chr2_mdup.bam  
 │   ├── normal-chr2_mdup.bam.bai  
@@ -36,13 +37,13 @@ Below is a example output using the fq files here:
 │   ├── tumour-chr2_mdup.bam  
 │   ├── tumour-chr2_mdup.bam.bai  
 │   └── tumour-chr2_metrics.txt  
-├── 03realign  
+├── __03realign__  
 │   ├── normal-chr2_mdup_recal.bai  
 │   ├── normal-chr2_mdup_recal.bam  
 │   ├── normal-chr2_tumour-chr2.mpileup  
 │   ├── tumour-chr2_mdup_recal.bai  
 │   └── tumour-chr2_mdup_recal.bam  
-├── 04mutation  
+├── __04mutation__  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.hc.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.Germline.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.indel.LOH.hc.vcf  
@@ -54,7 +55,7 @@ Below is a example output using the fq files here:
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Germline.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.hc.vcf  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.LOH.vcf  
-│   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf      # This file is our interested result of somatic mutation in the tumour.  
+│   ├── __normal-chr2_tumour-chr2_varscan.snp.Somatic.hc.vcf__       &nbsp # This file is our interested result of somatic mutation in the tumour.  
 │   ├── normal-chr2_tumour-chr2_varscan.snp.Somatic.vcf  
 │   └── normal-chr2_tumour-chr2_varscan.snp.vcf  
 
