@@ -25,9 +25,9 @@ The pipeline will generate
     
 Below is a example output using the fq files here:    
 .                   
-├── normal-chr2.log                  
-├── tumour-chr2.log            
-├── final.log  
+├── __normal-chr2.log__                  
+├── __tumour-chr2.log__            
+├── __final.log__  
 ├── __02align__  
 │   ├── normal-chr2.bam  
 │   ├── normal-chr2_mdup.bam  
