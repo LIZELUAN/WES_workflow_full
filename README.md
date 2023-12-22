@@ -21,9 +21,8 @@ Example command to run the pipeline: `Example_task.sh`.
 The pipeline will generate  
   - __Log files__: normal-chr2.log, tumour-chr2.log, and final.log.  
   - __Result files__ in three directories: 02align, 03realign, 04mutation  
-
-    
-## Example output using the example fq files:    
+<br>
+### Example output using the example fq files:    
 .                   
 ├── __normal-chr2.log__                  
 ├── __tumour-chr2.log__            
